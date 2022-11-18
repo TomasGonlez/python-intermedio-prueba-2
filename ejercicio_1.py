@@ -12,15 +12,19 @@
 # Química: 3.33
 # Biología: 3.0
 
-Pedro = [1,2,3,4,5,6]
-Juan = [7,8,9,10,11,12]
-Maria = [13,14,15,16,17,18]
+Pedro = [4,5,6,7,4,3]
+Juan = [5,6,4,3,3,3]
+Maria = [6,6,5,4,3,3]
+Promedio=[0,0,0,0,0,0]
 
 def main():
-    i=0
-    while i<5:
-        suma = lambda Pedro , Juan: Pedro[i]+Juan[i]
-        print(suma)
+    for i in range(0,6):
+        Promedio[i]=Pedro[i]+Juan[i]+Maria[i]
+        print(Promedio[i])
+    PromAsignatura = list(map(lambda x: x/3, Promedio))
+    PromAsignatura = list(map(lambda x: round(x,2), PromAsignatura))
+    print(PromAsignatura)
+    return
 
 if __name__ == "__main__":
     main()
