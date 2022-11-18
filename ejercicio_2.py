@@ -3,7 +3,7 @@
 # Imprima la lista por la consola.
 def main():
     primos = lambda n: [x for x in range(2, n) if all(x % y != 0 for y in range(2, x))]
-    lista_primos = primos(1000)
-    print(lista_primos)
+    primos2 = primos(1000)
+    print(primos2)
 if __name__ == '__main__':
     main()

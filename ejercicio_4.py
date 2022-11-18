@@ -11,8 +11,8 @@ def bloque_1():
 
 def bloque_2(num):
     try:
-        resultado = num + 10
-        print(resultado)
+        fin = num + 10
+        print(fin)
     except Exception as error:
         print(error)
     else:
